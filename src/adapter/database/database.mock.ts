@@ -23,6 +23,11 @@ export class Mock {
       ],
     });
     await this.clientModel.insertMany([
+      {
+        _id: "1ad8f3c1-09af-4fdd-a98f-7b55b4ef4c79",
+        name: "Leticia",
+        document: "12384658322"
+      }
     ] as (Omit<IClient, 'id'> & { _id: string })[]);
 
     console.log('Inserting mock... done!');
